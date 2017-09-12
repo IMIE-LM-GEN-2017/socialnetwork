@@ -52,7 +52,12 @@
                             <li><a href="contact.html">Contact Us</a></li>
                         </ul>
                     </li>-->
-                    <li class="dropdown"><a href="{{route('logout')}}">Déconnexion</a></li>
+                    <li class="dropdown"><a href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();document.getElementById('logout-form').submit();">
+                            Déconnexion
+                        </a>
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                              style="display: none;">{{ csrf_field() }}</form></li>
                 </ul>
                 <form class="navbar-form navbar-right hidden-sm">
                     <div class="form-group">

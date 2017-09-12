@@ -10,28 +10,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo" /></a>
+                <a class="navbar-brand" href="{!! route('home') !!}"><img src="images/logo.png" alt="logo" /></a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right main-menu">
-                    <li class="dropdown"><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Newsfeed <span><img src="images/down-arrow.png" alt="" /></span></a>
-                        <ul class="dropdown-menu newsfeed-home">
-                            <li><a href="newsfeed.html">Newsfeed</a></li>
-                            <li><a href="newsfeed-people-nearby.html">Poeple Nearly</a></li>
-                            <li><a href="newsfeed-friends.html">My friends</a></li>
-                            <li><a href="newsfeed-messages.html">Chatroom</a></li>
-                            <li><a href="newsfeed-images.html">Images</a></li>
-                            <li><a href="newsfeed-videos.html">Videos</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
+                <!-- <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Timeline <span><img src="images/down-arrow.png" alt="" /></span></a>
                         <ul class="dropdown-menu login">
-                            <li><a href="timeline.html">Timeline</a></li>
+                            <li><a href="{!! route('profil') !!}">Timeline</a></li>
                             <li><a href="timeline-about.html">Timeline About</a></li>
                             <li><a href="timeline-album.html">Timeline Album</a></li>
                             <li><a href="timeline-friends.html">Timeline Friends</a></li>
@@ -53,16 +41,19 @@
                             <li><a href="timeline-friends.html">Timeline Friends</a></li>
                             <li><a href="contact.html">Contact Us</a></li>
                         </ul>
-                    </li>
-                    <li class="dropdown"><a href="contact.html">Contact</a></li>
+                    </li>-->
+                    <li class="dropdown"><a href="{{route('login')}}">Connexion</a></li>
                 </ul>
                 <form class="navbar-form navbar-right hidden-sm">
                     <div class="form-group">
                         <i class="icon ion-android-search"></i>
-                        <input type="text" class="form-control" placeholder="Search friends, photos, videos">
+                        <input type="text" class="form-control" placeholder="Rechercher...">
                     </div>
                 </form>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav>
 </header>
+
+
+

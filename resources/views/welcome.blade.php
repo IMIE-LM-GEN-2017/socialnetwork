@@ -11,7 +11,7 @@
             <img src="images/users/user-5.jpg" alt="user" class="profile-photo-md pull-left"/>
             <div class="post-detail">
                 <div class="user-info">
-                    <h5><a href="timeline.html" class="profile-link">Prénom Nom</a></h5>
+                    <h5><a href="timeline.html" class="profile-link">{{Auth()->user()->first_name}} {{Auth()->user()->last_name}}</a></h5>
                     <p class="text-muted">a publié une photo <a href="#">il y a 3 min</a></p>
                 </div>
                 <div class="reaction">
