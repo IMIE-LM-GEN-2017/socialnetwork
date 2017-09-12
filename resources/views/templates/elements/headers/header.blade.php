@@ -17,7 +17,8 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right main-menu">
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Profil <span><img src="images/down-arrow.png" alt="" /></span></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{Auth()->user()->first_name}}
+                            {{Auth()->user()->last_name}} &nbsp;<img src="images/down-arrow.png" alt="" /></a>
                         <ul class="dropdown-menu newsfeed-home">
                             <li><a href="{!! route('home') !!}">Fil d'actualité</a></li>
                             <li><a href="{!! route('friendslist')!!}">Mes amis</a></li>

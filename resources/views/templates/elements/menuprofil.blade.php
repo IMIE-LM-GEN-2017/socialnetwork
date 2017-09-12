@@ -4,8 +4,7 @@
             <div class="col-md-3">
                 <div class="profile-info">
                     <img src="images/users/user-1.jpg" alt="" class="img-responsive profile-photo"/>
-                    <h3>{{Auth()->user()->first_name}} {{Auth()->user()->last_name}}</h3>
-                    <p class="text-muted">{{Auth()->user()->situation}}</p>
+
                 </div>
             </div>
             <div class="col-md-9">

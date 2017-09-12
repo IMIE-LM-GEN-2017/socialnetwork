@@ -1,4 +1,3 @@
-<div class="col-md-2 static">
     <div id="sticky-sidebar">
         <h4 class="grey">Activité</h4>
         <div class="feed-item">
@@ -26,4 +25,3 @@
             </div>
         </div>
     </div>
-</div>
